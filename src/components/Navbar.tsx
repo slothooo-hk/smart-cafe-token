@@ -4,10 +4,10 @@ import { Coffee, Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Buy SCC", href: "#buy-scc" },
   { label: "Menu", href: "#menu" },
-  { label: "Benefits", href: "#benefits" },
+  { label: "CoffeePass", href: "#coffeepass" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Ecosystem", href: "#ecosystem" },
   { label: "FAQ", href: "#faq" },
 ];
 
@@ -15,12 +15,11 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#" className="flex items-center gap-2 font-heading font-bold text-lg text-foreground">
           <Coffee className="w-6 h-6 text-primary" />
-          <span>Campus Cafe</span>
-          <span className="text-xs px-2 py-0.5 rounded-full bg-accent/10 text-accent font-medium">SCC</span>
+          <span>BrewCoffee</span>
         </a>
 
         <div className="hidden md:flex items-center gap-6">
@@ -29,8 +28,8 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="#buy-scc" className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity">
-            Connect Wallet
+          <a href="#menu" className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity active:scale-[0.97]">
+            Order Now
           </a>
         </div>
 
@@ -53,8 +52,8 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
-              <a href="#buy-scc" onClick={() => setOpen(false)} className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center">
-                Connect Wallet
+              <a href="#menu" onClick={() => setOpen(false)} className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center">
+                Order Now
               </a>
             </div>
           </motion.div>

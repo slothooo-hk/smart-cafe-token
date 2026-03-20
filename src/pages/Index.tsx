@@ -1,13 +1,12 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
-import TokenUtilitySection from "@/components/TokenUtilitySection";
-import BuySCCSection from "@/components/BuySCCSection";
 import MenuSection from "@/components/MenuSection";
-import SmartContractSection from "@/components/SmartContractSection";
-import BenefitsSection from "@/components/BenefitsSection";
+import CoffeePassSection from "@/components/CoffeePassSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import SmartFeaturesSection from "@/components/SmartFeaturesSection";
 import EcosystemSection from "@/components/EcosystemSection";
+import MerchantSection from "@/components/MerchantSection";
 import FAQSection from "@/components/FAQSection";
 import FooterSection from "@/components/FooterSection";
 
@@ -16,13 +15,12 @@ const Index = () => (
     <Navbar />
     <HeroSection />
     <AboutSection />
-    <HowItWorksSection />
-    <TokenUtilitySection />
-    <BuySCCSection />
     <MenuSection />
-    <SmartContractSection />
-    <BenefitsSection />
+    <CoffeePassSection />
+    <HowItWorksSection />
+    <SmartFeaturesSection />
     <EcosystemSection />
+    <MerchantSection />
     <FAQSection />
     <FooterSection />
   </>

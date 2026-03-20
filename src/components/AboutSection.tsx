@@ -1,39 +1,40 @@
 import { motion } from "framer-motion";
-import { Shield, Coins, Smartphone } from "lucide-react";
+import { Store, Wallet, CreditCard, Bot } from "lucide-react";
 
-const features = [
-  { icon: Coins, title: "Tokenized Coupons", desc: "Prepaid cafe coupons are minted as digital tokens on the blockchain." },
-  { icon: Smartphone, title: "Wallet-Based", desc: "Store tokens in your campus wallet and redeem anytime at the cafe." },
-  { icon: Shield, title: "Transparent & Secure", desc: "Every transaction is recorded on-chain for full transparency." },
+const points = [
+  { icon: Store, title: "Web3 Cafe Storefront", desc: "Browse drinks, order food, and manage your cafe experience — all digitally." },
+  { icon: CreditCard, title: "Buy Subscriptions", desc: "Purchase CoffeePass plans for regular drinks and unlock exclusive benefits." },
+  { icon: Wallet, title: "BrewBank Wallet", desc: "Pay seamlessly with your BrewBank wallet — no cash, no friction." },
+  { icon: Bot, title: "OpenBrew Automation", desc: "In the future, OpenBrew agents can handle routine orders with your approval." },
 ];
 
 const AboutSection = () => (
-  <section id="about" className="py-24 bg-secondary/30">
+  <section id="about" className="py-24">
     <div className="container mx-auto px-4">
-      <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+      <motion.div initial={{ opacity: 0, y: 16, filter: "blur(4px)" }} whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
-          What is <span className="text-gradient-warm">Campus Cafe Coupon</span>?
+          About <span className="text-gradient-green">BrewCoffee</span>
         </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto">
-          A Web3 campus cafe platform where prepaid coupons are tokenized as digital assets. Students buy tokens in advance, hold them in wallets, and redeem them later for coffee, tea, cake, and more at the cafe.
+        <p className="text-muted-foreground max-w-2xl mx-auto text-base">
+          BrewCoffee is a Web3 cafe storefront where you can browse drinks, subscribe to coffee passes, and redeem benefits digitally — all powered by the BrewBank ecosystem.
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-6">
-        {features.map((f, i) => (
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+        {points.map((p, i) => (
           <motion.div
-            key={f.title}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.1 }}
-            className="p-6 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors group"
+            key={p.title}
+            initial={{ opacity: 0, y: 16, filter: "blur(4px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: i * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="p-6 rounded-2xl bg-card border border-border hover:border-primary/30 transition-colors group"
           >
-            <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:glow-warm transition-shadow">
-              <f.icon className="w-6 h-6 text-primary" />
+            <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/15 transition-colors">
+              <p.icon className="w-5 h-5 text-primary" />
             </div>
-            <h3 className="font-heading font-semibold text-lg mb-2">{f.title}</h3>
-            <p className="text-sm text-muted-foreground">{f.desc}</p>
+            <h3 className="font-heading font-semibold mb-1.5">{p.title}</h3>
+            <p className="text-sm text-muted-foreground leading-relaxed">{p.desc}</p>
           </motion.div>
         ))}
       </div>
