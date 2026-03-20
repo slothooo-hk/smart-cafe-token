@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,56 +6,49 @@
 
 @layer base {
   :root {
-    --background: 30 15% 6%;
-    --foreground: 40 30% 92%;
+    --background: 40 33% 98%;
+    --foreground: 25 20% 15%;
 
-    --card: 30 12% 10%;
-    --card-foreground: 40 30% 92%;
+    --card: 0 0% 100%;
+    --card-foreground: 25 20% 15%;
 
-    --popover: 30 12% 10%;
-    --popover-foreground: 40 30% 92%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 20% 15%;
 
-    --primary: 32 90% 55%;
-    --primary-foreground: 30 15% 6%;
+    --primary: 145 45% 42%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 30 12% 14%;
-    --secondary-foreground: 40 30% 85%;
+    --secondary: 35 30% 95%;
+    --secondary-foreground: 25 20% 25%;
 
-    --muted: 30 8% 16%;
-    --muted-foreground: 30 10% 55%;
+    --muted: 35 20% 93%;
+    --muted-foreground: 25 10% 45%;
 
-    --accent: 170 85% 50%;
-    --accent-foreground: 30 15% 6%;
+    --accent: 25 65% 48%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 30 10% 18%;
-    --input: 30 10% 18%;
-    --ring: 32 90% 55%;
+    --border: 35 15% 88%;
+    --input: 35 15% 88%;
+    --ring: 145 45% 42%;
 
-    --radius: 0.75rem;
+    --radius: 0.875rem;
 
-    --neon-cyan: 170 85% 50%;
-    --neon-green: 145 70% 50%;
-    --coffee-warm: 32 90% 55%;
-    --coffee-dark: 25 40% 20%;
-    --coffee-cream: 35 40% 82%;
+    --brew-green: 145 45% 42%;
+    --brew-brown: 25 65% 48%;
+    --brew-cream: 35 30% 95%;
+    --brew-warm: 35 40% 92%;
 
-    --gradient-hero: linear-gradient(135deg, hsl(30 15% 6%) 0%, hsl(25 20% 12%) 50%, hsl(30 15% 6%) 100%);
-    --gradient-neon: linear-gradient(135deg, hsl(170 85% 50%), hsl(145 70% 50%));
-    --gradient-warm: linear-gradient(135deg, hsl(32 90% 55%), hsl(25 80% 45%));
-    --shadow-neon: 0 0 30px hsl(170 85% 50% / 0.2);
-    --shadow-warm: 0 0 30px hsl(32 90% 55% / 0.15);
-
-    --sidebar-background: 30 12% 10%;
-    --sidebar-foreground: 40 30% 92%;
-    --sidebar-primary: 32 90% 55%;
-    --sidebar-primary-foreground: 30 15% 6%;
-    --sidebar-accent: 30 12% 14%;
-    --sidebar-accent-foreground: 40 30% 92%;
-    --sidebar-border: 30 10% 18%;
-    --sidebar-ring: 170 85% 50%;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 25 20% 15%;
+    --sidebar-primary: 145 45% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 30% 95%;
+    --sidebar-accent-foreground: 25 20% 25%;
+    --sidebar-border: 35 15% 88%;
+    --sidebar-ring: 145 45% 42%;
   }
 }
 
@@ -74,29 +67,13 @@
 }
 
 @layer utilities {
-  .text-gradient-neon {
+  .text-gradient-green {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-neon);
+    background-image: linear-gradient(135deg, hsl(145 45% 42%), hsl(155 50% 35%));
   }
 
   .text-gradient-warm {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-warm);
-  }
-
-  .glow-neon {
-    box-shadow: var(--shadow-neon);
-  }
-
-  .glow-warm {
-    box-shadow: var(--shadow-warm);
-  }
-
-  .bg-gradient-hero {
-    background-image: var(--gradient-hero);
-  }
-
-  .border-gradient-neon {
-    border-image: var(--gradient-neon) 1;
+    background-image: linear-gradient(135deg, hsl(25 65% 48%), hsl(15 55% 42%));
   }
 }
