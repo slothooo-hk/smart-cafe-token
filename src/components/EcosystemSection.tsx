@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Landmark, Coffee, Bot } from "lucide-react";
+import { Landmark, Coffee, Car } from "lucide-react";
 
 const services = [
   {
@@ -10,14 +10,14 @@ const services = [
   },
   {
     icon: Coffee,
-    name: "BrewCoffee",
+    name: "BrewCafe",
     desc: "Drinks, subscriptions, merchant orders, and rewards. Your daily cafe experience — you are here.",
     highlight: true,
   },
   {
-    icon: Bot,
-    name: "OpenBrew",
-    desc: "Approved automated ordering and delivery coordination. Let smart agents handle your routine orders.",
+    icon: Car,
+    name: "BrewRide",
+    desc: "Automated ordering and delivery services — like Uber/Grab for your coffee. Let BrewRide handle the logistics.",
     highlight: false,
   },
 ];
@@ -30,7 +30,7 @@ const EcosystemSection = () => (
           Part of a Connected <span className="text-gradient-green">Ecosystem</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          BrewCoffee works seamlessly with BrewBank and OpenBrew for a complete commerce experience.
+          BrewCafe works seamlessly with BrewBank and BrewRide for a complete commerce experience.
         </p>
       </motion.div>
 

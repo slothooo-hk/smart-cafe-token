@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { Wallet, Ticket, Zap, MapPin, Bot } from "lucide-react";
+import { Wallet, Ticket, Zap, MapPin, Car } from "lucide-react";
 
 const features = [
   { icon: Wallet, title: "Wallet-Connected Checkout", desc: "Pay directly from your BrewBank wallet — fast, secure, and cashless." },
   { icon: Ticket, title: "Tokenized Subscriptions", desc: "CoffeePass plans are digital prepaid memberships on-chain." },
   { icon: Zap, title: "Fast Merchant Settlement", desc: "Smart contracts handle merchant payments automatically." },
   { icon: MapPin, title: "Pickup & Delivery", desc: "Choose in-store pickup or delivery — flexibility built in." },
-  { icon: Bot, title: "Future Agent Ordering", desc: "OpenBrew agents can automate routine orders with your approval." },
+  { icon: Car, title: "BrewRide Delivery", desc: "BrewRide agents can automate ordering and deliver to your door." },
 ];
 
 const SmartFeaturesSection = () => (
@@ -14,7 +14,7 @@ const SmartFeaturesSection = () => (
     <div className="container mx-auto px-4">
       <motion.div initial={{ opacity: 0, y: 16, filter: "blur(4px)" }} whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
-          Why BrewCoffee Is <span className="text-gradient-warm">Smarter</span>
+          Why BrewCafe Is <span className="text-gradient-warm">Smarter</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">Smart coffee starts here. Flexible drinks, digital rewards, and seamless checkout.</p>
       </motion.div>

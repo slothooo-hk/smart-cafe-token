@@ -64,7 +64,7 @@ const CoffeePassSection = () => (
               <p.icon className="w-6 h-6 text-primary" />
             </div>
             <h3 className="text-lg font-heading font-bold mb-2">{p.name}</h3>
-            <p className="text-3xl font-heading font-bold text-foreground mb-1">{p.price} <span className="text-sm font-normal text-muted-foreground">SCC</span></p>
+            <p className="text-3xl font-heading font-bold text-foreground mb-1">{p.price} <span className="text-sm font-normal text-muted-foreground">BREW</span></p>
             <div className="flex justify-center gap-3 text-xs text-muted-foreground mb-3">
               <span>{p.drinks} drinks</span>
               <span>•</span>

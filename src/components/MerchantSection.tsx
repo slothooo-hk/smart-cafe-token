@@ -5,7 +5,7 @@ const benefits = [
   { icon: Users, title: "Repeat Customer Engagement", desc: "CoffeePass drives daily visits and builds lasting loyalty." },
   { icon: CreditCard, title: "Prepaid Subscription Revenue", desc: "Receive upfront working capital from tokenized coffee plans." },
   { icon: BarChart3, title: "Easier Settlement", desc: "Smart contracts handle payments automatically — less admin, fewer delays." },
-  { icon: Truck, title: "Delivery & Automation Ready", desc: "Integrate with delivery services and future OpenBrew agent ordering." },
+  { icon: Truck, title: "Delivery & Automation Ready", desc: "Integrate with delivery services and BrewRide for automated ordering and fulfillment." },
 ];
 
 const MerchantSection = () => (
@@ -13,7 +13,7 @@ const MerchantSection = () => (
     <div className="container mx-auto px-4">
       <motion.div initial={{ opacity: 0, y: 16, filter: "blur(4px)" }} whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
-          BrewCoffee for <span className="text-gradient-warm">Merchants</span>
+          BrewCafe for <span className="text-gradient-warm">Merchants</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
           A modern merchant model — prepaid revenue, automated settlement, and digital customer relationships.

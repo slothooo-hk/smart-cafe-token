@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { Store, Wallet, CreditCard, Bot } from "lucide-react";
+import { Store, Wallet, CreditCard, Car } from "lucide-react";
 
 const points = [
   { icon: Store, title: "Web3 Cafe Storefront", desc: "Browse drinks, order food, and manage your cafe experience — all digitally." },
   { icon: CreditCard, title: "Buy Subscriptions", desc: "Purchase CoffeePass plans for regular drinks and unlock exclusive benefits." },
   { icon: Wallet, title: "BrewBank Wallet", desc: "Pay seamlessly with your BrewBank wallet — no cash, no friction." },
-  { icon: Bot, title: "OpenBrew Automation", desc: "In the future, OpenBrew agents can handle routine orders with your approval." },
+  { icon: Car, title: "BrewRide Delivery", desc: "BrewRide agents can automate routine orders and deliver to your door — like Uber for coffee." },
 ];
 
 const AboutSection = () => (
@@ -13,10 +13,10 @@ const AboutSection = () => (
     <div className="container mx-auto px-4">
       <motion.div initial={{ opacity: 0, y: 16, filter: "blur(4px)" }} whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }} className="text-center mb-16">
         <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
-          About <span className="text-gradient-green">BrewCoffee</span>
+          About <span className="text-gradient-green">BrewCafe</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto text-base">
-          BrewCoffee is a Web3 cafe storefront where you can browse drinks, subscribe to coffee passes, and redeem benefits digitally — all powered by the BrewBank ecosystem.
+          BrewCafe is a Web3 cafe storefront where you can browse drinks, subscribe to coffee passes, and redeem benefits digitally — all powered by the BrewBank ecosystem.
         </p>
       </motion.div>
 
