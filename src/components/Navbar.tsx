@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Coffee, Menu, X } from "lucide-react";
+import { Coffee, Menu, X, Wallet } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -28,8 +28,8 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="#menu" className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity active:scale-[0.97]">
-            Order Now
+          <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity active:scale-[0.97]">
+            <Wallet className="w-4 h-4" /> Connect BrewBank
           </a>
         </div>
 
@@ -52,8 +52,8 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
-              <a href="#menu" onClick={() => setOpen(false)} className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center">
-                Order Now
+              <a href="#" onClick={() => setOpen(false)} className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center">
+                <Wallet className="w-4 h-4" /> Connect BrewBank
               </a>
             </div>
           </motion.div>

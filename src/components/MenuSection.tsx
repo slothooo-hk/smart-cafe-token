@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Wallet } from "lucide-react";
 
 const items = [
   { name: "Black Coffee", price: 10, desc: "Classic espresso-based black coffee", emoji: "☕" },
@@ -36,7 +37,13 @@ const MenuSection = () => (
             </button>
           </motion.div>
         ))}
-      </div>
+        </div>
+
+        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3, duration: 0.5 }} className="flex justify-center mt-10">
+          <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity active:scale-[0.97]">
+            <Wallet className="w-5 h-5" /> Connect BrewBank Wallet
+          </button>
+        </motion.div>
     </div>
   </section>
 );
