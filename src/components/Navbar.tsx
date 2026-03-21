@@ -28,8 +28,8 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="#menu" className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity active:scale-[0.97]">
-            Order Now
+          <a href="#" className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm hover:opacity-90 transition-opacity active:scale-[0.97]">
+            <Wallet className="w-4 h-4" /> Connect BrewBank
           </a>
         </div>
 
