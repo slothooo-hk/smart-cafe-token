@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Wallet } from "lucide-react";
 
 const items = [
   { name: "Black Coffee", price: 10, desc: "Classic espresso-based black coffee", emoji: "☕" },
