@@ -15,7 +15,7 @@ const MenuSection = () => (
         <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
           Featured <span className="text-gradient-warm">Menu</span>
         </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">Order your favorites and pay with SCC tokens from your wallet.</p>
+        <p className="text-muted-foreground max-w-xl mx-auto">Order your favorites and pay with BREW tokens from your wallet.</p>
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
@@ -31,7 +31,7 @@ const MenuSection = () => (
             <div className="text-4xl mb-4">{item.emoji}</div>
             <h3 className="font-heading font-semibold mb-1">{item.name}</h3>
             <p className="text-xs text-muted-foreground mb-3">{item.desc}</p>
-            <p className="text-2xl font-heading font-bold text-accent mb-4">{item.price} <span className="text-sm font-normal text-muted-foreground">SCC</span></p>
+            <p className="text-2xl font-heading font-bold text-accent mb-4">{item.price} <span className="text-sm font-normal text-muted-foreground">BREW</span></p>
             <button className="w-full py-2.5 rounded-xl bg-primary/10 text-primary font-medium text-sm hover:bg-primary hover:text-primary-foreground transition-colors active:scale-[0.97]">
               Select
             </button>

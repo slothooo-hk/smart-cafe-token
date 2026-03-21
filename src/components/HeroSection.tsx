@@ -17,7 +17,7 @@ const HeroSection = () => (
           ☕ Part of the BrewBank Ecosystem
         </span>
         <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold leading-[1.1] mb-5 text-foreground" style={{ textWrap: "balance" }}>
-          BrewCoffee
+          BrewCafe
         </h1>
         <p className="text-xl sm:text-2xl font-heading font-medium text-muted-foreground mb-4" style={{ textWrap: "balance" }}>
           A smarter Web3 cafe experience for daily drinks, subscriptions, and seamless ordering.
@@ -41,7 +41,7 @@ const HeroSection = () => (
         transition={{ duration: 0.7, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
         className="flex justify-center"
       >
-        <img src={heroImg} alt="BrewCoffee" className="w-72 lg:w-[380px] animate-float drop-shadow-lg" />
+        <img src={heroImg} alt="BrewCafe" className="w-72 lg:w-[380px] animate-float drop-shadow-lg" />
       </motion.div>
     </div>
   </section>

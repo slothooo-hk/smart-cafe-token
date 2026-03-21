@@ -15,7 +15,7 @@ const FooterSection = () => (
       <div className="flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex items-center gap-2 font-heading font-bold text-foreground">
           <Coffee className="w-5 h-5 text-primary" />
-          BrewCoffee
+          BrewCafe
         </div>
 
         <div className="flex flex-wrap items-center gap-4 justify-center">
@@ -28,7 +28,7 @@ const FooterSection = () => (
       </div>
 
       <p className="text-center text-xs text-muted-foreground mt-8">
-        © 2026 BrewCoffee — Part of the BrewBank Ecosystem · Designed for repeat orders, subscriptions, and future agent-assisted convenience.
+        © 2026 BrewCafe — Part of the BrewBank Ecosystem · Designed for repeat orders, subscriptions, and future agent-assisted convenience.
       </p>
     </div>
   </footer>
