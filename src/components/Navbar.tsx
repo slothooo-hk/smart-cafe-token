@@ -52,8 +52,8 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
-              <a href="#menu" onClick={() => setOpen(false)} className="px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center">
-                Order Now
+              <a href="#" onClick={() => setOpen(false)} className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-primary text-primary-foreground font-medium text-sm text-center">
+                <Wallet className="w-4 h-4" /> Connect BrewBank
               </a>
             </div>
           </motion.div>
