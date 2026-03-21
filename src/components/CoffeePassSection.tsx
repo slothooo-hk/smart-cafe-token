@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Zap, Briefcase, CalendarDays } from "lucide-react";
+import { Zap, Briefcase, CalendarDays, Wallet } from "lucide-react";
 
 const passes = [
   {
