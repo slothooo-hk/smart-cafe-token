@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Coffee, Menu, X } from "lucide-react";
+import { Coffee, Menu, X, Wallet } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
