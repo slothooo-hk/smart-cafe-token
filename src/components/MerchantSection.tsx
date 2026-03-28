@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Users, CreditCard, BarChart3, Truck } from "lucide-react";
 
 const benefits = [
-  { icon: Users, title: "Repeat Customer Engagement", desc: "CoffeePass drives daily visits and builds lasting loyalty." },
-  { icon: CreditCard, title: "Prepaid Subscription Revenue", desc: "Receive upfront working capital from tokenized coffee plans." },
-  { icon: BarChart3, title: "Easier Settlement", desc: "Smart contracts handle payments automatically — less admin, fewer delays." },
-  { icon: Truck, title: "Delivery & Automation Ready", desc: "Integrate with delivery services and BrewRide for automated ordering and fulfillment." },
+  { icon: Users, title: "Repeat Customer Engagement", desc: "CoffeePass drives daily visits and builds lasting loyalty with BrewCoin rewards." },
+  { icon: CreditCard, title: "Prepaid Subscription Revenue", desc: "Receive upfront working capital from tokenized coffee plans backed by locked BrewCoin." },
+  { icon: BarChart3, title: "Easier Settlement", desc: "Smart contracts handle payments automatically — 82% of each order settled instantly." },
+  { icon: Truck, title: "Delivery & Automation Ready", desc: "Integrate with Brew Ride for delivery and OpenClaw for automated ordering and fulfillment." },
 ];
 
 const MerchantSection = () => (

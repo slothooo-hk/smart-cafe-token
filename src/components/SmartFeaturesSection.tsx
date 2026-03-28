@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
-import { Wallet, Ticket, Zap, MapPin, Car } from "lucide-react";
+import { Wallet, Ticket, Zap, MapPin, Car, Bot } from "lucide-react";
 
 const features = [
   { icon: Wallet, title: "Wallet-Connected Checkout", desc: "Pay directly from your BrewBank wallet — fast, secure, and cashless." },
-  { icon: Ticket, title: "Tokenized Subscriptions", desc: "CoffeePass plans are digital prepaid memberships on-chain." },
-  { icon: Zap, title: "Fast Merchant Settlement", desc: "Smart contracts handle merchant payments automatically." },
-  { icon: MapPin, title: "Pickup & Delivery", desc: "Choose in-store pickup or delivery — flexibility built in." },
-  { icon: Car, title: "BrewRide Delivery", desc: "BrewRide agents can automate ordering and deliver to your door." },
+  { icon: Ticket, title: "Tokenized Subscriptions", desc: "CoffeePass plans are prepaid memberships backed by locked BrewCoin." },
+  { icon: Zap, title: "Fast Merchant Settlement", desc: "Smart contracts handle merchant payments automatically via escrow." },
+  { icon: MapPin, title: "Pickup & Delivery", desc: "Choose in-store pickup or Brew Ride delivery — flexibility built in." },
+  { icon: Car, title: "Brew Ride Delivery", desc: "Brew Ride couriers deliver to your door with on-chain proof of delivery." },
+  { icon: Bot, title: "OpenClaw AI Ordering", desc: "OpenClaw automates your routine orders within your approved budget and rules." },
 ];
 
 const SmartFeaturesSection = () => (

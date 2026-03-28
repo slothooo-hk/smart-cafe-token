@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Ticket } from "lucide-react";
+import { ArrowRight, Ticket, ShieldCheck } from "lucide-react";
 import heroImg from "@/assets/hero-brew.png";
 
 const HeroSection = () => (
@@ -13,17 +13,26 @@ const HeroSection = () => (
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       >
-        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary mb-6 border border-primary/15">
+        <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-primary/10 text-primary mb-4 border border-primary/15">
           ☕ Part of the BrewBank Ecosystem
         </span>
-        <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold leading-[1.1] mb-5 text-foreground" style={{ textWrap: "balance" }}>
+
+        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/5 border border-primary/20 mb-6">
+          <ShieldCheck className="w-4 h-4 text-primary" />
+          <div>
+            <p className="text-xs font-semibold text-foreground">✓ Verified BrewBank Merchant</p>
+            <p className="text-[10px] text-muted-foreground leading-tight">BrewCoffee is registered on the BrewBank Merchant Registry. All transactions are settled through verified smart contracts.</p>
+          </div>
+        </div>
+
+        <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-heading font-bold leading-[1.1] mb-5 text-foreground" style={{ textWrap: "balance" as any }}>
           BrewCafe
         </h1>
-        <p className="text-xl sm:text-2xl font-heading font-medium text-muted-foreground mb-4" style={{ textWrap: "balance" }}>
+        <p className="text-xl sm:text-2xl font-heading font-medium text-muted-foreground mb-4" style={{ textWrap: "balance" as any }}>
           A smarter Web3 cafe experience for daily drinks, subscriptions, and seamless ordering.
         </p>
         <p className="text-base text-muted-foreground max-w-lg mb-8">
-          Buy coffee passes, pay with your wallet, and connect to the BrewBank ecosystem for a more flexible cafe experience.
+          Buy coffee passes, pay with BrewCoin (BewDCoin) from your wallet, and connect to the BrewBank ecosystem for a more flexible cafe experience.
         </p>
         <div className="flex flex-wrap gap-3">
           <a href="#menu" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity active:scale-[0.97]">

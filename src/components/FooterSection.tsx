@@ -4,7 +4,10 @@ const links = [
   { label: "About", href: "#about" },
   { label: "Menu", href: "#menu" },
   { label: "CoffeePass", href: "#coffeepass" },
+  { label: "How It Works", href: "#how-it-works" },
   { label: "Ecosystem", href: "#ecosystem" },
+  { label: "OpenClaw", href: "#openclaw" },
+  { label: "Brew Ride", href: "#ecosystem" },
   { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#" },
 ];

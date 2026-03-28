@@ -2,12 +2,15 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { motion } from "framer-motion";
 
 const faqs = [
-  { q: "What is BrewCafe?", a: "BrewCafe is a Web3 cafe storefront where you can browse drinks, buy subscriptions, and pay digitally with your BrewBank wallet. It's part of a connected ecosystem designed for convenient, modern cafe experiences." },
-  { q: "Do I need a crypto wallet to use this demo?", a: "For the full experience, you'd connect a BrewBank wallet. This is a proof-of-concept demo for a university Web3 smart banking project, so no real crypto is required." },
-  { q: "What is CoffeePass?", a: "CoffeePass is a tokenized prepaid coffee membership. You pay upfront for a set number of drinks over a period (weekly, workday, or monthly) and redeem them at any BrewCafe location." },
-  { q: "How does BrewCafe connect with BrewBank?", a: "BrewBank provides the wallet and payment infrastructure. When you order on BrewCafe, payment is processed through your BrewBank wallet with smart contract settlement." },
-  { q: "What is BrewRide?", a: "BrewRide is an automated ordering and delivery service — like Uber/Grab for your coffee. With your approval, BrewRide agents can place routine orders and deliver them to your door." },
-  { q: "Can I choose pickup or delivery?", a: "Yes! BrewCafe supports both in-store pickup and BrewRide delivery options. Choose what's most convenient when you place your order." },
+  { q: "What is BrewCoin (BewDCoin)?", a: "BrewCoin is the single settlement token of the BrewBank ecosystem. Used for all coffee payments, delivery fees, platform fees, staking, and rewards. Obtain BrewCoin by topping up with FPS, card, bank transfer, or stablecoin." },
+  { q: "Is CoffeePass a separate token?", a: "No. CoffeePass is a prepaid coffee plan backed by locked BrewCoin. When you buy a CoffeePass, BrewCoin is locked in CoffeePassVault and released automatically on each redemption. One token only: BrewCoin." },
+  { q: "How are CoffeePass prices set?", a: "Fixed by the CoffeePassVault contract: Morning Pass (90 BREW / 10 drinks), Monthly Pass (250 BREW / 30 drinks), Weekend Pass (60 BREW / 5 drinks)." },
+  { q: "Are there daily redemption limits on CoffeePass?", a: "Yes. The CoffeePassVault contract enforces daily redemption limits per pass to ensure fair use across the validity period." },
+  { q: "What is Brew Ride?", a: "Brew Ride is the delivery and courier network in the BrewBank ecosystem. Couriers receive 13% of each order value in BrewCoin after confirmed delivery." },
+  { q: "What is OpenClaw?", a: "OpenClaw is an agentic AI that places coffee orders on your behalf. You set daily spend limits, approved merchants, and time windows on-chain. OpenClaw operates strictly within those rules and cannot access funds beyond your AgentVault allowance." },
+  { q: "What happens if my order is not delivered?", a: "Payment is held in OrderEscrow. If delivery proof is not confirmed, BrewCoin is automatically refunded to your wallet, CoffeePassVault, or AgentVault depending on your payment method." },
+  { q: "Can I cash out my BrewCoin?", a: "Yes. BrewBank supports BREW → USD conversion via offRampFromBrewCoin, subject to BrewBank terms and applicable regulations." },
+  { q: "Do I need crypto experience to use BrewCoffee?", a: "No. You can fund your wallet using everyday payment methods like FPS or card. BrewBank handles the conversion to BrewCoin automatically." },
 ];
 
 const FAQSection = () => (

@@ -1,23 +1,29 @@
 import { motion } from "framer-motion";
-import { Landmark, Coffee, Car } from "lucide-react";
+import { Landmark, Coffee, Car, Bot } from "lucide-react";
 
 const services = [
   {
     icon: Landmark,
     name: "BrewBank",
-    desc: "Wallet, payments, staking, and smart spending controls. The financial backbone of the ecosystem.",
+    desc: "Web3 wallet, BrewCoin issuance, staking, on/off-ramp, KYC/AML compliance, merchant & courier registry, platform governance.",
     highlight: false,
   },
   {
     icon: Coffee,
-    name: "BrewCafe",
-    desc: "Drinks, subscriptions, merchant orders, and rewards. Your daily cafe experience — you are here.",
+    name: "BrewCoffee",
+    desc: "Cafe merchant service. Publishes menu and CoffeePass offers. Submits POS fulfillment proof. Receives instant BrewCoin settlement.",
     highlight: true,
   },
   {
     icon: Car,
-    name: "BrewRide",
-    desc: "Automated ordering and delivery services — like Uber/Grab for your coffee. Let BrewRide handle the logistics.",
+    name: "Brew Ride",
+    desc: "Delivery and courier network. Picks up and delivers orders. Submits delivery proof on-chain. Receives 13% of each order in BrewCoin.",
+    highlight: false,
+  },
+  {
+    icon: Bot,
+    name: "OpenClaw",
+    desc: "Agentic AI ordering layer. Operates within user-set AgentVault constraints. Automates routine coffee orders safely — spending caps, merchant allowlists, and time windows enforced on-chain.",
     highlight: false,
   },
 ];
@@ -30,11 +36,11 @@ const EcosystemSection = () => (
           Part of a Connected <span className="text-gradient-green">Ecosystem</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          BrewCafe works seamlessly with BrewBank and BrewRide for a complete commerce experience.
+          BrewCoffee works seamlessly with BrewBank, Brew Ride, and OpenClaw for a complete commerce experience.
         </p>
       </motion.div>
 
-      <div className="grid md:grid-cols-3 gap-5 max-w-4xl mx-auto">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
         {services.map((s, i) => (
           <motion.div
             key={s.name}
