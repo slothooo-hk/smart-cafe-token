@@ -15,7 +15,7 @@ const MenuSection = () => (
         <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-4">
           Featured <span className="text-gradient-warm">Menu</span>
         </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">Order your favorites and pay with BREW tokens from your wallet.</p>
+        <p className="text-muted-foreground max-w-xl mx-auto">Order your favorites and pay with BrewCoin from your wallet.</p>
       </motion.div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-4xl mx-auto">
@@ -37,13 +37,13 @@ const MenuSection = () => (
             </button>
           </motion.div>
         ))}
-        </div>
+      </div>
 
-        <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3, duration: 0.5 }} className="flex justify-center mt-10">
-          <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity active:scale-[0.97]">
-            <Wallet className="w-5 h-5" /> Connect BrewBank Wallet
-          </button>
-        </motion.div>
+      <motion.div initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3, duration: 0.5 }} className="flex justify-center mt-10">
+        <button className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity active:scale-[0.97]">
+          <Wallet className="w-5 h-5" /> Connect BrewBank Wallet
+        </button>
+      </motion.div>
     </div>
   </section>
 );

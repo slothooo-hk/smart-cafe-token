@@ -3,9 +3,9 @@ import { Store, Wallet, CreditCard, Car } from "lucide-react";
 
 const points = [
   { icon: Store, title: "Web3 Cafe Storefront", desc: "Browse drinks, order food, and manage your cafe experience — all digitally." },
-  { icon: CreditCard, title: "Buy Subscriptions", desc: "Purchase CoffeePass plans for regular drinks and unlock exclusive benefits." },
-  { icon: Wallet, title: "BrewBank Wallet", desc: "Pay seamlessly with your BrewBank wallet — no cash, no friction." },
-  { icon: Car, title: "BrewRide Delivery", desc: "BrewRide agents can automate routine orders and deliver to your door — like Uber for coffee." },
+  { icon: CreditCard, title: "Buy Subscriptions", desc: "Purchase CoffeePass plans for regular drinks backed by locked BrewCoin." },
+  { icon: Wallet, title: "BrewBank Wallet", desc: "Pay seamlessly with BrewCoin (BewDCoin) from your BrewBank wallet — no cash, no friction." },
+  { icon: Car, title: "Brew Ride Delivery", desc: "Brew Ride couriers deliver to your door with on-chain proof — like Uber for coffee." },
 ];
 
 const AboutSection = () => (
@@ -16,7 +16,7 @@ const AboutSection = () => (
           About <span className="text-gradient-green">BrewCafe</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto text-base">
-          BrewCafe is a Web3 cafe storefront where you can browse drinks, subscribe to coffee passes, and redeem benefits digitally — all powered by the BrewBank ecosystem.
+          BrewCafe is a Web3 cafe storefront where you can browse drinks, subscribe to coffee passes, and redeem benefits digitally — all powered by BrewCoin and the BrewBank ecosystem.
         </p>
       </motion.div>
 

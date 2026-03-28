@@ -8,6 +8,7 @@ const navLinks = [
   { label: "CoffeePass", href: "#coffeepass" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "Ecosystem", href: "#ecosystem" },
+  { label: "OpenClaw", href: "#openclaw" },
   { label: "FAQ", href: "#faq" },
 ];
 
